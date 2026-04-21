@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Поддержка курьера</title>
+<style>
+body {
+    font-family: Arial;
+    background:#f3f3f3;
+    margin:0;
+}
+.container {
+    max-width:500px;
+    margin:40px auto;
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+}
+h1 { font-size:20px; }
+button {
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    margin-top:10px;
+    cursor:pointer;
+}
+.tip {
+    background:#ff9800;
+    color:#fff;
+}
+.rate {
+    background:#4CAF50;
+    color:#fff;
+}
+textarea {
+    width:100%;
+    height:80px;
+}
+.small {
+    font-size:12px;
+    color:#777;
+    text-align:center;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<h1>Спасибо за заказ 🙂</h1>
+
+<p>Если всё ок — буду рад оценке и поддержке</p>
+
+<h3>Оценка</h3>
+<label><input type="radio"> Отлично</label>
+
+<label><input type="radio"> Нормально</label>
+
+<label><input type="radio"> Плохо</label>
+
+<h3>Комментарий</h3>
+<textarea placeholder="Что можно улучшить?"></textarea>
+
+<button class="rate" onclick="alert('Спасибо за отзыв 🙂')">Отправить отзыв</button>
+
+<h3>Поддержать курьера ❤️</h3>
+<button class="tip" onclick="window.location.href='https://t.me/'">
+Оставить чаевые
+</button>
+
+<p class="small">Спасибо 🙌</p>
+
+</div>
+</body>
+</html>
