@@ -115,3 +115,142 @@ button {
 
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Оценка доставки</title>
+
+<style>
+body {
+    font-family: -apple-system, Arial;
+    margin: 0;
+    background: #f4f6f8;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+}
+
+h1 {
+    font-size: 22px;
+    margin: 0 0 5px 0;
+}
+
+.sub {
+    color: #666;
+    font-size: 14px;
+}
+
+h3 {
+    margin-top: 15px;
+}
+
+label {
+    display: block;
+    margin: 6px 0;
+}
+
+textarea {
+    width: 100%;
+    height: 90px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    resize: none;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.submit {
+    background: #2ecc71;
+    color: white;
+}
+
+.tip {
+    background: #ff9500;
+    color: white;
+}
+
+.small {
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- ЗАГОЛОВОК -->
+<div class="card">
+<h1>Спасибо за заказ 🙂</h1>
+<div class="sub">Оцените качество доставки</div>
+</div>
+
+<!-- ФОРМА ОТЗЫВА -->
+<div class="card">
+
+<form action="https://formspree.io/f/xyklnzev" method="POST">
+
+<h3>Оценка</h3>
+
+<label><input type="radio" name="rate" value="Отлично"> ⭐ Отлично</label>
+<label><input type="radio" name="rate" value="Хорошо"> 👍 Хорошо</label>
+<label><input type="radio" name="rate" value="Нормально"> 🙂 Нормально</label>
+<label><input type="radio" name="rate" value="Плохо"> 👎 Плохо</label>
+
+<h3>Комментарий</h3>
+<textarea name="message" placeholder="Что можно улучшить?"></textarea>
+
+<button class="submit" type="submit">Отправить отзыв</button>
+
+</form>
+
+</div>
+
+<!-- ЧАЕВЫЕ -->
+<div class="card">
+
+<h3>Поддержать курьера ❤️</h3>
+
+<p class="sub">
+Если всё понравилось — можно оставить чаевые через ЮMoney
+</p>
+
+<button class="tip" onclick="window.location.href='https://yoomoney.ru/fundraise/1HA1BEV13DT.260422'">
+Оставить чаевые
+</button>
+
+</div>
+
+<!-- ПОДПИСЬ -->
+<div class="small">
+Спасибо, что пользуетесь доставкой 🙌
+</div>
+
+</div>
+
+</body>
+</html>
